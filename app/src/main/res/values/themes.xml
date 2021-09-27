@@ -13,4 +13,16 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="titulo" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="android:textSize">38sp</item>
+        <item name="android:textColor">#D14F97</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="button_login" parent="@style/Widget.MaterialComponents.Button">
+        <item name="cornerRadius">6dp</item>
+        <item name="backgroundTint">#EC198E</item>
+        <item name="android:padding">16dp</item>
+    </style>
 </resources>
