@@ -9,4 +9,5 @@
     <string name="login_lembrar_me">Lembrar-me</string>
     <string name="login_esqueci">Esqueci a senha</string>
     <string name="login_nao_tem_conta">Não tem uma conta?</string>
+    <string name="trocar_foto_usuario">Trocar foto</string>
 </resources>
