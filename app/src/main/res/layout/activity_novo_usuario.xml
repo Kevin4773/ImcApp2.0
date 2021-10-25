@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".NovoUsuarioActivity"
-    android:padding="10dp"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:orientation="vertical"
-        android:id="@+id/iv_wave_top">
+        android:id="@+id/iv_wave_top"
+        android:layout_marginTop="25dp">
 
         <androidx.cardview.widget.CardView
             android:layout_width="100dp"
@@ -40,7 +40,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/iv_wave_top">
+        android:layout_below="@+id/iv_wave_top"
+        android:scrollbars="none">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -63,6 +64,7 @@
                 android:layout_marginTop="15dp">
 
                 <EditText
+                    android:id="@+id/email_login"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/dados_email"/>
@@ -76,6 +78,7 @@
                 android:layout_marginTop="15dp">
 
                 <EditText
+                    android:id="@+id/senha_login"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/dados_senha"/>
@@ -98,6 +101,7 @@
                 android:layout_marginTop="15dp">
 
                 <EditText
+                    android:id="@+id/nome_login"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/dados_nome"
@@ -112,6 +116,7 @@
                 android:layout_marginTop="15dp">
 
                 <EditText
+                    android:id="@+id/profissao_login"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/dados_profissao"/>
@@ -125,9 +130,11 @@
                 android:layout_marginTop="15dp">
 
                 <EditText
+                    android:id="@+id/altura_login"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/dados_altura"/>
+                    android:hint="@string/dados_altura"
+                    android:inputType="numberDecimal"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -138,9 +145,11 @@
                 android:layout_marginTop="15dp">
 
                 <EditText
+                    android:id="@+id/peso_login"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/dados_peso"/>
+                    android:hint="@string/dados_peso"
+                    android:inputType="numberDecimal"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -151,9 +160,11 @@
                 android:layout_marginTop="15dp">
 
                 <EditText
+                    android:id="@+id/data_nascimento_login"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/dados_data_nascimento"/>
+                    android:hint="@string/dados_data_nascimento"
+                    android:inputType="date"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -170,12 +181,14 @@
                 android:orientation="horizontal">
 
                 <RadioButton
+                    android:id="@+id/sexo_m_login"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/dados_sexo_opcaoM"
                     android:layout_marginRight="20dp"/>
 
                 <RadioButton
+                    android:id="@+id/sexo_f_login"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/dados_sexo_opcaoF"/>
@@ -184,7 +197,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
-                android:background="#C5B8B8"/>
+                android:background="#282828"/>
 
         </LinearLayout>
 
