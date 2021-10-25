@@ -142,6 +142,7 @@
                     android:text="@string/login_nao_tem_conta"/>
 
                 <Button
+                    android:id="@+id/button_nova_conta"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Criar uma conta agora"
