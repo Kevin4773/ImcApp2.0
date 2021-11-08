@@ -28,17 +28,17 @@
         </androidx.cardview.widget.CardView>
 
         <TextView
+            android:id="@+id/nome_dash"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Kevin Alves"
             android:layout_gravity="center"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
             android:textColor="@color/white"/>
 
         <TextView
+            android:id="@+id/profissao_dash"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Jogador de poker :)"
             android:layout_gravity="center"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
             android:textColor="@color/white"/>
@@ -49,14 +49,16 @@
             android:layout_marginTop="32dp">
 
             <TextView
+                android:id="@+id/imc_dash"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:text="25.7"
+                android:layout_weight="1"
                 android:gravity="center_horizontal"
-                android:textAppearance="@style/valores_dashboard_values"/>
+                android:text="25.7"
+                android:textAppearance="@style/valores_dashboard_values" />
 
             <TextView
+                android:id="@+id/bmi_dash"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
@@ -65,6 +67,7 @@
                 android:textAppearance="@style/valores_dashboard_values"/>
 
             <TextView
+                android:id="@+id/idade"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
@@ -84,7 +87,6 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:text="1.74"
                 android:gravity="center_horizontal"
                 android:textAppearance="@style/valores_dashboard_values"/>
         </LinearLayout>
@@ -127,6 +129,7 @@
                 android:textAppearance="@style/labes_dashboard_values"/>
 
             <TextView
+                android:id="@+id/altura_dash"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
