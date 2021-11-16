@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import com.example.imc_app.utilts.calcularIdade
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,6 +22,8 @@ class MainActivity : AppCompatActivity() {
         val buttonNovoUsuario = findViewById<Button>(R.id.button_nova_conta)
 
         buttonEntrar.setOnClickListener {
+
+            calcularIdade("2005/05/08")
 
             val arquivo = getSharedPreferences("usuario", MODE_PRIVATE)
             val email = arquivo.getString("email", "")
