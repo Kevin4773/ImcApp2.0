@@ -17,9 +17,9 @@ fun calcularIdade(dataNascimento: String): Int {
 
     // Convertar a dataNascimento que é string em LocalDate
     val nascimento = LocalDate.of(
-            data.get(2).toInt(),
+            data.get(0).toInt(),
             data.get(1).toInt(),
-            data.get(0).toInt())
+            data.get(2).toInt())
 
     // Calculo do periodo entre datas
     val idade = Period.between(nascimento, hoje).years.toString()

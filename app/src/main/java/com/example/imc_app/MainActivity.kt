@@ -23,24 +23,28 @@ class MainActivity : AppCompatActivity() {
 
         buttonEntrar.setOnClickListener {
 
-            calcularIdade("2005/05/08")
-
             val arquivo = getSharedPreferences("usuario", MODE_PRIVATE)
             val email = arquivo.getString("email", "")
             val senha = arquivo.getString("senha", "")
 
             if (email == editEmail.text.toString() && senha == editSenha.text.toString()) {
+
                 val entrar = Intent(this, DashBoardActivity::class.java)
                 startActivity(entrar)
+
             }else {
+
                 Toast.makeText(this, "Senha ou usuário incorretos", Toast.LENGTH_SHORT).show()
+
             }
 
         }
 
         buttonNovoUsuario.setOnClickListener {
+
             val abrirNovaConta = Intent(this, NovoUsuarioActivity::class.java)
             startActivity(abrirNovaConta)
+
         }
 
     }

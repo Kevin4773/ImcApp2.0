@@ -9,6 +9,7 @@ class DashBoardActivity : AppCompatActivity() {
     lateinit var nome: TextView
     lateinit var profissao: TextView
     lateinit var altura: TextView
+    lateinit var idade: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,6 +18,7 @@ class DashBoardActivity : AppCompatActivity() {
         nome = findViewById<TextView>(R.id.nome_dash)
         profissao = findViewById<TextView>(R.id.profissao_dash)
         altura = findViewById<TextView>(R.id.altura_dash)
+        idade = findViewById<TextView>(R.id.idade_dash)
 
         preencherDashboard()
 
@@ -25,8 +27,11 @@ class DashBoardActivity : AppCompatActivity() {
 
     private fun preencherDashboard() {
         val arquivo = getSharedPreferences("usuario", MODE_PRIVATE)
+        //val nascimento = getSharedPreferences("nascimento")
+
         nome.text = arquivo.getString("nome", "")
         profissao.text = arquivo.getString("profissao", "")
         altura.text = arquivo.getFloat("altura", 0.0f).toString()
+        //idade.text = arquivo.getInt("idade", "")
     }
 }

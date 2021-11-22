@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -67,11 +67,10 @@
                 android:textAppearance="@style/valores_dashboard_values"/>
 
             <TextView
-                android:id="@+id/idade"
+                android:id="@+id/idade_dash"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:text="23"
                 android:gravity="center_horizontal"
                 android:textAppearance="@style/valores_dashboard_values"/>
 
@@ -84,6 +83,7 @@
                 android:textAppearance="@style/valores_dashboard_values"/>
 
             <TextView
+                android:id="@+id/altura_dash"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
@@ -129,7 +129,6 @@
                 android:textAppearance="@style/labes_dashboard_values"/>
 
             <TextView
-                android:id="@+id/altura_dash"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
