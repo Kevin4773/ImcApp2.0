@@ -146,13 +146,13 @@
         android:gravity="center_vertical">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/pesar_agora"
             android:layout_width="match_parent"
             android:layout_height="120dp"
             app:cardElevation="10dp"
             app:cardUseCompatPadding="true">
 
             <RelativeLayout
-                android:id="@+id/pesar_agora"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 

@@ -9,7 +9,8 @@
         android:roundIcon="@drawable/imc"
         android:supportsRtl="true"
         android:theme="@style/Theme.ImcApp">
-        <activity android:name=".NovoUsuarioActivity"></activity>
+        <activity android:name=".activity_pessagem2"></activity>
+        <activity android:name=".NovoUsuarioActivity" />
         <activity android:name=".DashBoardActivity" />
         <activity
             android:name=".MainActivity"
